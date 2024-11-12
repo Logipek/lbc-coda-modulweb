@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lemauvaiscoin</title>
+    <link rel="icon" href="assets/img/favicon.png" type="image/x-icon">
+    <!-- Bootstrap CSS -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="assets/css/styles.css" rel="stylesheet"> <!-- Custom CSS -->
+</head>
+<body>
+        <header>
+            <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+                <!-- Version Mobile -->
+                <div class="container-fluid d-lg-none">
+                    <!-- Version Mobile (canva) - Ne touche pas à cette partie -->
+                    <div class="d-flex justify-content-between align-items-center w-100">
+                        <button class="border-0 navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <h5 class="couleur-lbc fw-bold mx-auto" id="offcanvasNavbarLabel">LeMauvaisCoin</h5>
+                    </div>
+                    <form class="d-flex w-100 mt-2 align-items-center justify-content-center">
+                        <input class="form-control me-2 rounded" type="search" placeholder="Rechercher sur LeMauvaisCoin" aria-label="Search">
+                    </form>
+                    <div class="d-block offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header">
+                            <div class="w-100 d-flex justify-content-center align-items-center">
+                                <h5 class="couleur-lbc fw-bold" id="offcanvasNavbarLabel">LeMauvaisCoin</h5>
+                            </div>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <ul class="navbar-nav justify-content-start flex-grow-1 pe-3">
+                                <li class="nav-item">
+                                    <a class="nav-link" aria-current="page" href="#">Déposer une annonce</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Rechercher</a>
+                                </li>
+                                <hr>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Message</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Favoris</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Recherche sauvegardées</a>
+                                </li>
+                                <hr>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            
+                <!-- Version Desktop -->
+                <div class="container d-none d-lg-flex align-items-center justify-content-between">
+                    <div class="d-flex align-items-center">
+                        <a href="index.html" class="couleur-lbc fw-bold me-3" id="offcanvasNavbarLabel">LeMauvaisCoin</a>
+                        <button class="btn couleur-lbc-bg">Déposer une annonce</button>
+                    </div>
+                    <form class="d-flex mx-auto">
+                        <input class="form-control" type="search" placeholder="Rechercher sur LeMauvaisCoin" aria-label="Search">
+                        <button class="btn couleur-lbc-bg ms-2" type="submit">
+                            <i class="bi bi-search"></i>
+                        </button>
+                    </form>
+                    <ul class="navbar-nav d-flex align-items-center">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Mes recherches</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Favoris</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Messages</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="account.html">Mon compte</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            
+        </header>
+        
+        <section>
+            <div class="container my-5 caca">
+                <!-- User Profile Header -->
+                <div class="d-flex flex-column flex-md-row align-items-center mb-4">
+                  <img src="https://via.placeholder.com/60" alt="Profile Photo" class="profile-photo me-md-3 mb-3 mb-md-0">
+                  <div class="profile-info text-center text-md-start">
+                    <h5 class="mb-0">Hugo</h5>
+                    <p class="text-muted mb-1">⭐ 5 (8 avis)</p>
+                    <a href="#" class="text-decoration-none">Accéder à mon profil public</a>
+                  </div>
+                  <div class="ms-md-auto balance-card">
+                    <p class="section-title">Porte-monnaie</p>
+                    <h4 class="text-success">0,00 €</h4>
+                    <p class="text-muted">Solde disponible</p>
+                  </div>
+                </div>
+              
+                <!-- Menu Options -->
+                <div class="row gy-3">
+                  <div class="col-6 col-md-4">
+                    <div class="card p-3 text-center">
+                      <div class="mb-2"><i class="bi bi-file-text fs-2"></i></div>
+                      <h6>Annonces</h6>
+                      <p class="text-muted d-none d-md-block">Gérer mes annonces déposées</p>
+                    </div>
+                  </div>
+                  <div class="col-6 col-md-4">
+                    <div class="card p-3 text-center">
+                      <div class="mb-2"><i class="bi bi-currency-exchange fs-2"></i></div>
+                      <h6>Transactions</h6>
+                      <p class="text-muted d-none d-md-block">Suivre mes achats et mes ventes</p>
+                    </div>
+                  </div>
+                  <div class="col-6 col-md-4">
+                    <div class="card p-3 text-center">
+                      <div class="mb-2"><i class="bi bi-umbrella fs-2"></i></div>
+                      <h6>Réservation de vacances</h6>
+                      <p class="text-muted d-none d-md-block">Retrouver vos réservations en tant qu'hôte ou voyageur</p>
+                    </div>
+                  </div>
+                  <div class="col-6 col-md-4">
+                    <div class="card p-3 text-center">
+                      <div class="mb-2"><i class="bi bi-person-circle fs-2"></i></div>
+                      <h6>Profil & Espaces</h6>
+                      <p class="text-muted d-none d-md-block">Modifier mon profil public, accéder à mes avis</p>
+                    </div>
+                  </div>
+                  <div class="col-6 col-md-4">
+                    <div class="card p-3 text-center">
+                      <div class="mb-2"><i class="bi bi-gear fs-2"></i></div>
+                      <h6>Paramètres</h6>
+                      <p class="text-muted d-none d-md-block">Compléter et modifier mes informations privées</p>
+                    </div>
+                  </div>
+                  <div class="col-6 col-md-4">
+                    <div class="card p-3 text-center">
+                      <div class="mb-2"><i class="bi bi-shield-check fs-2"></i></div>
+                      <h6>Connexion et sécurité</h6>
+                      <p class="text-muted d-none d-md-block">Protéger mon compte et consulter son indice de sécurité</p>
+                    </div>
+                  </div>
+                  <div class="col-6 col-md-4">
+                    <div class="card p-3 text-center">
+                      <div class="mb-2"><i class="bi bi-credit-card fs-2"></i></div>
+                      <h6>Mes crédits</h6>
+                    </div>
+                  </div>
+                  <div class="col-6 col-md-4">
+                    <div class="card p-3 text-center">
+                      <div class="mb-2"><i class="bi bi-question-circle fs-2"></i></div>
+                      <h6>Aide</h6>
+                    </div>
+                  </div>
+                </div>
+              
+                <!-- Logout Button -->
+                <div class="text-center mt-4">
+                  <button class="btn btn-outline-secondary">Me déconnecter</button>
+                </div>
+              </div>
+        </section>
+
+
+        <footer class="bg-dark text-light py-4">
+            <div class="container">
+                <!-- Footer complet pour desktop -->
+                <div class="row d-none d-lg-flex">
+                    <!-- Colonne : À propos du site -->
+                    <div class="col-md-3 mb-3">
+                        <h6 class="text-uppercase fw-bold">À propos du site</h6>
+                        <ul class="list-unstyled">
+                            <li><a href="#" class="text-light">Qui sommes-nous ?</a></li>
+                            <li><a href="#" class="text-light">Nous rejoindre</a></li>
+                            <li><a href="#" class="text-light">Nos engagements</a></li>
+                            <li><a href="#" class="text-light">Espace presse</a></li>
+                        </ul>
+                    </div>
+        
+                    <!-- Colonne : Informations légales -->
+                    <div class="col-md-3 mb-3">
+                        <h6 class="text-uppercase fw-bold">Informations légales</h6>
+                        <ul class="list-unstyled">
+                            <li><a href="#" class="text-light">Conditions d'utilisation</a></li>
+                            <li><a href="#" class="text-light">Vie privée / cookies</a></li>
+                            <li><a href="#" class="text-light">Vos droits</a></li>
+                            <li><a href="#" class="text-light">Accessibilité</a></li>
+                        </ul>
+                    </div>
+        
+                    <!-- Colonne : Solutions Pros -->
+                    <div class="col-md-3 mb-3">
+                        <h6 class="text-uppercase fw-bold">Nos solutions Pros</h6>
+                        <ul class="list-unstyled">
+                            <li><a href="#" class="text-light">Publicité</a></li>
+                            <li><a href="#" class="text-light">Professionnels de l'immobilier</a></li>
+                            <li><a href="#" class="text-light">Professionnels de l'auto</a></li>
+                            <li><a href="#" class="text-light">Autres solutions pros</a></li>
+                        </ul>
+                    </div>
+        
+                    <!-- Colonne : Contact & Réseaux sociaux -->
+                    <div class="col-md-3 mb-3">
+                        <h6 class="text-uppercase fw-bold">Suivez-nous</h6>
+                        <div>
+                            <a href="#" class="text-light me-2"><i class="bi bi-linkedin"></i></a>
+                            <a href="#" class="text-light me-2"><i class="bi bi-instagram"></i></a>
+                            <a href="#" class="text-light"><i class="bi bi-pinterest"></i></a>
+                        </div>
+                        <div class="mt-3">
+                            <h6 class="text-uppercase fw-bold">Applications</h6>
+                            <a href="#"><img src="path-to-app-store-logo.png" alt="App Store" class="img-fluid"></a>
+                            <a href="#"><img src="path-to-google-play-logo.png" alt="Google Play" class="img-fluid"></a>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Footer minimaliste pour mobile -->
+                <div class="row d-lg-none">
+                    <div class="col-12 text-center mb-3">
+                        <p class="small">&copy; Leboncoin 2006 - 2024</p>
+                        <a href="#" class="text-light me-3">Conditions d'utilisation</a>
+                        <a href="#" class="text-light me-3">Vie privée</a>
+                        <a href="#" class="text-light">Accessibilité</a>
+                    </div>
+                    <div class="col-12 text-center">
+                        <h6 class="text-uppercase fw-bold mb-2">Suivez-nous</h6>
+                        <a href="#" class="text-light me-2"><i class="bi bi-linkedin"></i></a>
+                        <a href="#" class="text-light me-2"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="text-light"><i class="bi bi-pinterest"></i></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        
+        
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="assets/js/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <script src="assets/js/scripts.js"></script> <!-- Custom JS -->
+</body>
+</html>

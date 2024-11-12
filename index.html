@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lemauvaiscoin</title>
+    <link rel="icon" href="assets/img/favicon.png" type="image/x-icon">
+    <!-- Bootstrap CSS -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="assets/css/styles.css" rel="stylesheet"> <!-- Custom CSS -->
+</head>
+<body>
+        <header>
+            <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+                <!-- Version Mobile -->
+                <div class="container-fluid d-lg-none">
+                    <!-- Version Mobile (canva) - Ne touche pas à cette partie -->
+                    <div class="d-flex justify-content-between align-items-center w-100">
+                        <button class="border-0 navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <a href="index.html" class="couleur-lbc fw-bold mx-auto" id="offcanvasNavbarLabel"><h5>LeMauvaisCoin</h5></a>
+                    </div>
+                    <form class="d-flex w-100 mt-2 align-items-center justify-content-center">
+                        <input class="form-control me-2 rounded" type="search" placeholder="Rechercher sur LeMauvaisCoin" aria-label="Search">
+                    </form>
+                    <div class="d-block offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header">
+                            <div class="w-100 d-flex justify-content-center align-items-center">
+                                <h5 class="couleur-lbc fw-bold" id="offcanvasNavbarLabel">LeMauvaisCoin</h5>
+                            </div>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <ul class="navbar-nav justify-content-start flex-grow-1 pe-3">
+                                <li class="nav-item">
+                                    <a class="nav-link" aria-current="page" href="#">Déposer une annonce</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Rechercher</a>
+                                </li>
+                                <hr>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Message</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Favoris</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="account.html">Mon compte</a>
+                                </li>
+                                <hr>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            
+                <!-- Version Desktop -->
+                <div class="container d-none d-lg-flex align-items-center justify-content-between">
+                    <div class="d-flex align-items-center">
+                        <h5 class="couleur-lbc fw-bold me-3" id="offcanvasNavbarLabel">LeMauvaisCoin</h5>
+                        <button class="btn couleur-lbc-bg">Déposer une annonce</button>
+                    </div>
+                    <form class="d-flex mx-auto">
+                        <input class="form-control" type="search" placeholder="Rechercher sur LeMauvaisCoin" aria-label="Search">
+                        <button class="btn couleur-lbc-bg ms-2" type="submit">
+                            <i class="bi bi-search"></i>
+                        </button>
+                    </form>
+                    <ul class="navbar-nav d-flex align-items-center">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Mes recherches</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Favoris</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Messages</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Se connecter</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            
+        </header>
+        
+        <main class="pt-5 mt-5">
+            <section id="banner">
+                <div class="container">
+                    <div class="row">
+                        <div class="mt-5 col-12">
+                            <div class="mobile-btn card-annonce d-flex mobile-btn justify-content-center align-items-center h-100">
+                                <h1 class="display-6 mb-4">C'est le moment de vendre</h1>
+                                <button class="btn  couleur-lbc-bg">Deposer une annonce</button>
+                                <img src="assets/img/bleu-banner.svg" class="position-absolute" alt="Bannière bleue">
+                                <img src="assets/img/orange-banner.svg" class="position-absolute" alt="Bannière orange">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="categorie">
+                <div class="container">
+                    <div class="row">
+                        <div class="mt-5 col-12">
+                            <div class="col-12 d-flex justify-content-between align-items-center">
+                                <h2 class="fs-3 fw-bold mb-0">Annonces à la une</h2>
+                                <div class="navigation-buttons d-flex gap-2">
+                                    <button class="btn btn-light" id="prev-btn">
+                                        <i class="bi bi-arrow-left"></i>
+                                    </button>
+                                    <button class="btn btn-light" id="next-btn">
+                                        <i class="bi bi-arrow-right"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <section class="annonces py-5">
+                            <div class="container">
+                                <div class="row overflow-hidden">
+                                    <div id="carousel-container" style="display: flex; flex-wrap: nowrap; overflow: hidden; gap: 20px;">
+                                        <!-- Annonce 1: Chiot Labrador -->
+                                        <div class="card h-100 flex-shrink-0" style="width: 250px;">
+                                            <img src="https://images.unsplash.com/photo-1574158622682-e40e69881006" class="card-img-top" alt="Chiot Labrador">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Chiot Labrador à vendre</h5>
+                                                <p class="card-text fw-bold">450 €</p>
+                                                <p class="card-text"><small class="text-muted">Paris - Il y a 2 heures</small></p>
+                                            </div>
+                                        </div>
+            
+                                        <!-- Annonce 2: Canapé moderne -->
+                                        <div class="card h-100 flex-shrink-0" style="width: 250px;">
+                                            <img src="https://images.unsplash.com/photo-1580587771525-78b9dba3b914" class="card-img-top" alt="Canapé moderne">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Canapé moderne 3 places</h5>
+                                                <p class="card-text fw-bold">650 €</p>
+                                                <p class="card-text"><small class="text-muted">Lyon - Il y a 1 heure</small></p>
+                                            </div>
+                                        </div>
+            
+                                        <!-- Annonce 3: Vélo de montagne -->
+                                        <div class="card h-100 flex-shrink-0" style="width: 250px;">
+                                            <img src="https://images.unsplash.com/photo-1598032890916-31b6e6d99025" class="card-img-top" alt="Vélo de montagne">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Vélo de montagne en excellent état</h5>
+                                                <p class="card-text fw-bold">300 €</p>
+                                                <p class="card-text"><small class="text-muted">Marseille - Il y a 4 heures</small></p>
+                                            </div>
+                                        </div>
+            
+                                        <!-- Annonce 4: MacBook Pro -->
+                                        <div class="card h-100 flex-shrink-0" style="width: 250px;">
+                                            <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8" class="card-img-top" alt="MacBook Pro">
+                                            <div class="card-body">
+                                                <h5 class="card-title">MacBook Pro 2020 - 256 Go</h5>
+                                                <p class="card-text fw-bold">1 200 €</p>
+                                                <p class="card-text"><small class="text-muted">Nantes - Hier</small></p>
+                                            </div>
+                                        </div>
+            
+                                        <!-- Annonce 5: Plantes d'intérieur -->
+                                        <div class="card h-100 flex-shrink-0" style="width: 250px;">
+                                            <img src="https://images.unsplash.com/photo-1523413651479-597eb2da0ad6" class="card-img-top" alt="Plantes d'intérieur">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Plantes d'intérieur (lot de 3)</h5>
+                                                <p class="card-text fw-bold">45 €</p>
+                                                <p class="card-text"><small class="text-muted">Toulouse - Il y a 3 heures</small></p>
+                                            </div>
+                                        </div>
+            
+                                        <!-- Annonce 6: Appareil photo Nikon -->
+                                        <div class="card h-100 flex-shrink-0" style="width: 250px;">
+                                            <img src="https://images.unsplash.com/photo-1519183071298-a2962eadea1d" class="card-img-top" alt="Appareil photo Nikon">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Appareil photo Nikon D3500</h5>
+                                                <p class="card-text fw-bold">500 €</p>
+                                                <p class="card-text"><small class="text-muted">Bordeaux - Hier</small></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </section>
+
+            <section class="categorie">
+                <div class="container">
+                    <div class="row">
+                        <div class="mt-5 col-12">
+                            <div class="col-12 d-flex justify-content-between align-items-center">
+                                <h2 class="fs-3 fw-bold mb-0">Annonces à la une</h2>
+                                <div class="navigation-buttons d-flex gap-2">
+                                    <button class="btn btn-light" id="prev-btn">
+                                        <i class="bi bi-arrow-left"></i>
+                                    </button>
+                                    <button class="btn btn-light" id="next-btn">
+                                        <i class="bi bi-arrow-right"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <section class="annonces py-5">
+                            <div class="container">
+                                <div class="row overflow-hidden">
+                                    <div id="carousel-container" style="display: flex; flex-wrap: nowrap; overflow: hidden; gap: 20px;">
+                                        <!-- Annonce 1: Chiot Labrador -->
+                                
+            
+                                        <!-- Annonce 4: MacBook Pro -->
+                                        <div class="card h-100 flex-shrink-0" style="width: 250px;">
+                                            <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8" class="card-img-top" alt="MacBook Pro">
+                                            <div class="card-body">
+                                                <h5 class="card-title">MacBook Pro 2020 - 256 Go</h5>
+                                                <p class="card-text fw-bold">1 200 €</p>
+                                                <p class="card-text"><small class="text-muted">Nantes - Hier</small></p>
+                                            </div>
+                                        </div>
+            
+                                        <!-- Annonce 5: Plantes d'intérieur -->
+                                        <div class="card h-100 flex-shrink-0" style="width: 250px;">
+                                            <img src="https://images.unsplash.com/photo-1523413651479-597eb2da0ad6" class="card-img-top" alt="Plantes d'intérieur">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Plantes d'intérieur (lot de 3)</h5>
+                                                <p class="card-text fw-bold">45 €</p>
+                                                <p class="card-text"><small class="text-muted">Toulouse - Il y a 3 heures</small></p>
+                                            </div>
+                                        </div>
+            
+                                        <!-- Annonce 6: Appareil photo Nikon -->
+                                        <div class="card h-100 flex-shrink-0" style="width: 250px;">
+                                            <img src="https://images.unsplash.com/photo-1519183071298-a2962eadea1d" class="card-img-top" alt="Appareil photo Nikon">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Appareil photo Nikon D3500</h5>
+                                                <p class="card-text fw-bold">500 €</p>
+                                                <p class="card-text"><small class="text-muted">Bordeaux - Hier</small></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </section>
+                        
+                        <!-- Ajouter le CSS pour les icônes Bootstrap -->
+                        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+                    </div>
+                </div>
+            </section>
+            
+            <section id="other-content">
+             
+            </section>
+        </main>
+
+
+        <footer class="bg-dark text-light py-4">
+            <div class="container">
+                <!-- Footer complet pour desktop -->
+                <div class="row d-none d-lg-flex">
+                    <!-- Colonne : À propos du site -->
+                    <div class="col-md-3 mb-3">
+                        <h6 class="text-uppercase fw-bold">À propos du site</h6>
+                        <ul class="list-unstyled">
+                            <li><a href="#" class="text-light">Qui sommes-nous ?</a></li>
+                            <li><a href="#" class="text-light">Nous rejoindre</a></li>
+                            <li><a href="#" class="text-light">Nos engagements</a></li>
+                            <li><a href="#" class="text-light">Espace presse</a></li>
+                        </ul>
+                    </div>
+        
+                    <!-- Colonne : Informations légales -->
+                    <div class="col-md-3 mb-3">
+                        <h6 class="text-uppercase fw-bold">Informations légales</h6>
+                        <ul class="list-unstyled">
+                            <li><a href="#" class="text-light">Conditions d'utilisation</a></li>
+                            <li><a href="#" class="text-light">Vie privée / cookies</a></li>
+                            <li><a href="#" class="text-light">Vos droits</a></li>
+                            <li><a href="#" class="text-light">Accessibilité</a></li>
+                        </ul>
+                    </div>
+        
+                    <!-- Colonne : Solutions Pros -->
+                    <div class="col-md-3 mb-3">
+                        <h6 class="text-uppercase fw-bold">Nos solutions Pros</h6>
+                        <ul class="list-unstyled">
+                            <li><a href="#" class="text-light">Publicité</a></li>
+                            <li><a href="#" class="text-light">Professionnels de l'immobilier</a></li>
+                            <li><a href="#" class="text-light">Professionnels de l'auto</a></li>
+                            <li><a href="#" class="text-light">Autres solutions pros</a></li>
+                        </ul>
+                    </div>
+        
+                    <!-- Colonne : Contact & Réseaux sociaux -->
+                    <div class="col-md-3 mb-3">
+                        <h6 class="text-uppercase fw-bold">Suivez-nous</h6>
+                        <div>
+                            <a href="#" class="text-light me-2"><i class="bi bi-linkedin"></i></a>
+                            <a href="#" class="text-light me-2"><i class="bi bi-instagram"></i></a>
+                            <a href="#" class="text-light"><i class="bi bi-pinterest"></i></a>
+                        </div>
+                        <div class="mt-3">
+                            <h6 class="text-uppercase fw-bold">Applications</h6>
+                            <a href="#"><img src="path-to-app-store-logo.png" alt="App Store" class="img-fluid"></a>
+                            <a href="#"><img src="path-to-google-play-logo.png" alt="Google Play" class="img-fluid"></a>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Footer minimaliste pour mobile -->
+                <div class="row d-lg-none">
+                    <div class="col-12 text-center mb-3">
+                        <p class="small">&copy; Leboncoin 2006 - 2024</p>
+                        <a href="#" class="text-light me-3">Conditions d'utilisation</a>
+                        <a href="#" class="text-light me-3">Vie privée</a>
+                        <a href="#" class="text-light">Accessibilité</a>
+                    </div>
+                    <div class="col-12 text-center">
+                        <h6 class="text-uppercase fw-bold mb-2">Suivez-nous</h6>
+                        <a href="#" class="text-light me-2"><i class="bi bi-linkedin"></i></a>
+                        <a href="#" class="text-light me-2"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="text-light"><i class="bi bi-pinterest"></i></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        
+        
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="assets/js/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <script src="assets/js/scripts.js"></script> <!-- Custom JS -->
+</body>
+</html>
